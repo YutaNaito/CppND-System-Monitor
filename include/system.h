@@ -20,8 +20,9 @@ class System {
 
   // TODO: Define any necessary private members
  private:
-  Processor cpu_ = {};
+  Processor cpu_ = Processor();  //{};
   std::vector<Process> processes_ = {};
+  enum PreCpu { preTotal, preIdle, preNonIdle };
 };
 
 #endif
